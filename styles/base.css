@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju:wght@200..800&display=swap');
+
+:root {
+    --primary-color: #003559;
+    --secondary-color: #B9D6F2;
+    --accent1-color: #FDCA40;
+    --accent2-color: #F79824;
+
+    --heading-font: 'Madimi One', serif;
+    --paragraph-font: "Ojuju", sans-serif; font-weight: 500; font-style: normal;
+
+    --nav-background-color: #003559;
+    --nav-link-color: #FDCA40;
+    --nav-hover-link-color: #F79824;
+    --nav-hover-background-color: #B9D6F2;
+}
+
+* {
+    max-width: 1000px;
+    align-self: center;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    vertical-align: middle;
+}
+
+nav {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color)
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    max-width: 960px;
+    padding: 20px;
+}
+
+figcaption {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+footer nav {
+    display: flex;
+    justify-content: right;
+}
+
+footer nav a {
+    padding: 5px;
+}
+
+footer a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: smaller;
+}
+
+th {
+    font-family: var(--heading-font);
+    color: var(--accent1-color)
+}
+
+td {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color)
+}
+
+table {
+    width: 100%;
+}
+
+main {
+    margin: auto;
+    width: 60%;
+}
+
+/* class items */
+
+section {
+    padding: 5px var(--secondary-color);
+}
