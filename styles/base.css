@@ -4,6 +4,7 @@
 :root {
     --primary-color: #003559;
     --secondary-color: #B9D6F2;
+    --off-color: #484848;
     --accent1-color: #FDCA40;
     --accent2-color: #F79824;
 
@@ -16,31 +17,27 @@
     --nav-hover-background-color: #B9D6F2;
 }
 
-* {
-    max-width: 1000px;
-    align-self: center;
-}
-
-
 body {
     background-color: var(--primary-color);
-    vertical-align: middle;
 }
 
 nav {
+    background-color: var(--off-color);
     grid-column-start: 2;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
-nav a {
+a {
     color: var(--nav-link-color);
     text-decoration: none;
     font-family: var(--heading-font);
     font-size: larger;
 }
 
-nav a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -60,48 +57,39 @@ p {
     padding: 20px;
 }
 
-figcaption {
-    color: var(--secondary-color);
-    font-family: var(--paragraph-font);
-}
-
-footer nav {
-    display: flex;
-    justify-content: right;
-}
-
-footer nav a {
-    padding: 5px;
-}
-
-footer a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-    font-family: var(--paragraph-font);
-    font-size: smaller;
-}
-
-th {
-    font-family: var(--heading-font);
-    color: var(--accent1-color)
-}
-
-td {
-    font-family: var(--paragraph-font);
-    color: var(--secondary-color)
-}
-
-table {
-    width: 100%;
-}
-
 main {
     margin: auto;
-    width: 60%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 66% 33%;
 }
 
 /* class items */
 
-section {
-    padding: 5px var(--secondary-color);
+.card {
+    border: solid 1px var(--secondary-color);
+    padding-left: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card h3 {
+    padding-top: 2rem;
+}
+
+.portrait {
+    display: inline-flex;
+    float: right;
+    border-radius: 10px;
+}
+
+.flag {
+    display: inline-flex;
+    border-radius: 10px;
+}
+
+.dev {
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 3rem;
 }

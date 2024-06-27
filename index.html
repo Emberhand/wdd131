@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles/base.css"
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -24,26 +25,30 @@
     <main>
         <section class="card">
             <h2>About Me</h2>
-            <img src="images/about_me.jpg" alt="Hayden Billings" width="200">
+            <img src="images/about_me.jpg" alt="Hayden Billings" width="200" class="portrait">
             <p>My name is Hayden Billings. I live in Utah and have lived here my whole life. For me, programming is a
             new interest that I am coming to love the more I learn about it. Apart from that, I enjoy the outdoors
             and writing.</p>
             <h3>Utah, USA</h3>
-            <img src="images/utah_flag.jpg" alt="Utah state flag">
-            <p>Utah is home of the Wasatch mountains and famous attractions such as Zion's National Park and the Great
-            Salt Lake. It is the renown destination of the LDS pioneers famous cross-country trek and the location
-            of the headquarters of the Church of Jesus Christ of Latter-Day Saints to this day.</p>
+            <div>
+                <img src="images/utah_flag.jpg" alt="Utah state flag" width="300px" class="flag">
+                <p class="utah">Utah is home of the Wasatch mountains and famous attractions such as Zion's National Park and the Great
+                Salt Lake. It is the renown destination of the LDS pioneers famous cross-country trek and the location
+                of the headquarters of the Church of Jesus Christ of Latter-Day Saints to this day.</p>
+            </div>
         </section>
         <section class="card">
             <h2>Web Dev Resources</h2>
-            <a href="https://stackoverflow.com/">Stack Overflow</a>
-            <a href="https://github.com/">Git Hub</a>
-            <a href="https://www.w3schools.com/">W3 Schools</a>
+            <div class="dev">
+                <a href="https://stackoverflow.com/">Stack Overflow</a>
+                <a href="https://github.com/">Git Hub</a>
+                <a href="https://www.w3schools.com/">W3 Schools</a>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> | Hayden Billings | Utah</p>
-        <p id="modified"></p>
+        <p>Document Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 
