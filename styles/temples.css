@@ -98,6 +98,10 @@ section {
     place-items: center;
 }
 
+figure img {
+    width: 100%;
+}
+
 /* mobile only */
 @media (max-width: 641px) {
     nav a, ul {
