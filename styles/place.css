@@ -5,6 +5,7 @@
     --primary-color: #003559;
     --secondary-color: #B9D6F2;
     --off-color: #484848;
+    --off-color-translucent: rgba(48,48,48,0.8);
     --accent1-color: #FDCA40;
     --accent2-color: #F79824;
 
@@ -105,7 +106,29 @@ p {
         width: 100%;
     }
 
-    .hero img{
+    footer {
+        position: fixed;
+        bottom: 0;
         width: 100%;
+        background-color: var(--primary-color);
+    }
+
+    .hero img{
+        position: absolute;
+        width: 100%;
+    }
+
+    .data {
+        position: absolute;
+        left: 1%;
+        top: 16%;
+        background-color: var(--off-color-translucent);
+    }
+
+    .weather {
+        position: absolute;
+        right: 1%;
+        bottom: 16%;
+        background-color: var(--off-color-translucent);
     }
 }
