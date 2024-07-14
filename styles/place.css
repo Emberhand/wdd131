@@ -22,25 +22,6 @@ body {
     background-color: var(--primary-color);
 }
 
-ul {
-    display: flex;
-    background-color: var(--off-color);
-    justify-content: center;
-    padding: 1rem;
-    font-family: var(--heading-font);
-    font-size: larger;
-    border-radius: 0.5rem;
-}
-
-ul a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--accent1-color)
