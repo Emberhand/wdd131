@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju:wght@200..800&display=swap');
+
+:root {
+    --primary-color: #003559;
+    --secondary-color: #B9D6F2;
+    --off-color: #484848;
+    --accent1-color: #FDCA40;
+    --accent2-color: #F79824;
+
+    --heading-font: 'Madimi One', serif;
+    --paragraph-font: "Ojuju", sans-serif; font-weight: 500; font-style: normal;
+
+    --nav-background-color: #003559;
+    --nav-link-color: #FDCA40;
+    --nav-hover-link-color: #F79824;
+    --nav-hover-background-color: #B9D6F2;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+ul {
+    display: flex;
+    background-color: var(--off-color);
+    justify-content: center;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: larger;
+    border-radius: 0.5rem;
+}
+
+ul a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color)
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+table {
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+td {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+.forecast img {
+    display: block;
+    margin: auto;
+}
+
+.hero img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.weather {
+    background-color: var(--off-color);
+    border-radius: 0.3rem;
+}
+
+.data {
+    background-color: var(--off-color);
+    border-radius: 0.3rem;
+}
+
+.label {
+    text-align: right;
+}
+
+/* large only */
+@media (min-width: 1000px) {
+    nav a, ul {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .hero img{
+        width: 100%;
+    }
+}
