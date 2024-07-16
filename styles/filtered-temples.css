@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju:wght@200..800&display=swap');
+
+:root {
+    --primary-color: #003559;
+    --secondary-color: #B9D6F2;
+    --off-color: #484848;
+    --accent1-color: #FDCA40;
+    --accent2-color: #F79824;
+
+    --heading-font: 'Madimi One', serif;
+    --paragraph-font: "Ojuju", sans-serif; font-weight: 500; font-style: normal;
+
+    --nav-background-color: #003559;
+    --nav-link-color: #FDCA40;
+    --nav-hover-link-color: #F79824;
+    --nav-hover-background-color: #B9D6F2;
+}
+
+#menu {
+	font-size: 2.5rem;
+    padding-top: .65rem;
+    padding-right: .5rem;
+	border: 0;
+	background: none;
+	color: var(--secondary-color);
+ 	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.open a {
+	display: flex;
+    color: var(--nav-link-color);
+    background-color: var(--off-color);
+    text-decoration: none;
+    justify-content: center;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: larger;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+ul {
+    display: flex;
+    background-color: var(--off-color);
+    justify-content: center;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: larger;
+    border-radius: 0.5rem;
+}
+
+ul a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color)
+}
+
+h2 {
+    text-align: center;
+}
+
+p, figcaption {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    max-width: 960px;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+/* mobile only */
+@media (max-width: 641px) {
+    nav a, ul {
+        display: none;
+    }
+
+    .open ul {
+        display: block;
+        background-color: var(--off-color);
+        justify-content: center;
+        padding: 1rem;
+        font-family: var(--heading-font);
+        font-size: larger;
+        border-radius: 0.5rem;
+    }
+}
