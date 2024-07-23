@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+.onyx {
+    background-color: #353839;
+    color: white;
+}
+
+.claret {
+    background-color: #7F1734;
+    color: white;
+}
+
+.khaki {
+    background-color: #F0E68C;
+}
+
+.blue {
+    background-color: #A3c1AD;
+}
+
+.gray {
+    background-color: #708090
+}
