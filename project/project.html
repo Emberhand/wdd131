@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="scripts/project.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page to answer all your questions about Lyman Lake">
+    <meta name="author" content="Hayden Billings">
+    <link rel="stylesheet" href="styles/project.css">
+    <title>Lyman Lake Adventures</title>
+</head>
+<body>
+    <header>
+        <h1>Lyman Lake Adventures</h1>
+    </header>
+    <main>
+        <picture class="hero">
+            <source media="(min-width:1000px)" srcset="images/lake.webp" loading="lazy">
+            <img src="images/lake-small.webp" alt="Antarctica" loading="lazy">
+          </picture>
+        <section class="data">
+            <h2>What To Do?</h2>
+                <p>There are many activites, both aquatic and otherwise to occupy your time at Lyman Lake. Visitors enjoy swimming in cool waters, riding trails, campfires, and so much more!
+                </p>
+                <p>Click below to find out more!</p>
+                <div class="button">
+                    <button id="activities">Explore!</button>
+                </div>
+        </section>
+        <section class="weather">
+            <h2>Where To Stay?</h2>
+                <p>If you want to camp, Lyman Lake is the place to do so! There are many options for lodging ranging from staying in the Lyman Lake lodge or cabins, to tents and RVs! Whatever your style, there's a place for you at Lyman Lake!</p>
+                <p>Click below to find out more!</p>
+                <div class="button">
+                    <button id="lodging">Explore!</button>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Hayden Billings | Utah</p>
+        <p>Document Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

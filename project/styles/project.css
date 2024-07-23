@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --primary-color:#001A04;
+    --secondary-color: #7F1734;
+    --off-color: #708090;
+    --off-color-translucent: rgba(70,80,90,0.8);
+    --accent1-color: #F0E68C;
+    --accent2-color: #A3c1AD;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+h1, h2 {
+    color: var(--accent1-color)
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+table {
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+td {
+    color: var(--secondary-color);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+p {
+    color: var(--accent2-color);
+}
+
+.forecast img {
+    display: block;
+    margin: auto;
+}
+
+.hero img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.weather {
+    background-color: var(--off-color);
+    border-radius: 0.3rem;
+}
+
+.data {
+    background-color: var(--off-color);
+    border-radius: 0.3rem;
+}
+
+.label {
+    text-align: right;
+}
+
+.data p, .weather p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+    grid-column-start: 2;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 1rem transparent;
+    border-radius: .2rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+/* large only */
+@media (min-width: 1000px) {
+    nav a, ul {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+    }
+
+    .hero img{
+        margin-left: auto;
+        position: absolute;
+        width: 100%;
+    }
+
+    .data {
+        position: absolute;
+        left: 1%;
+        top: 16%;
+        background-color: var(--off-color-translucent);
+        max-width: 30%;
+    }
+
+    .weather {
+        position: absolute;
+        right: 1%;
+        bottom: 10%;
+        background-color: var(--off-color-translucent);
+        max-width: 50%;
+    }
+}
