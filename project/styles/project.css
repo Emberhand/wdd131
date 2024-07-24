@@ -44,32 +44,46 @@ p {
     color: var(--accent2-color);
 }
 
-.forecast img {
-    display: block;
-    margin: auto;
-}
-
 .hero img {
     width: 400px;
     display: block;
     margin: auto;
 }
 
-.weather {
-    background-color: var(--off-color);
+.camp {
+    background-color: var(--off-color-translucent);
     border-radius: 0.3rem;
 }
 
-.data {
-    background-color: var(--off-color);
+.fun {
+    background-color: var(--off-color-translucent);
     border-radius: 0.3rem;
 }
 
-.label {
-    text-align: right;
+.card {
+    position: relative;
+    background-color: var(--off-color-translucent);
+    border-radius: 0.3rem;
+    width: 70%;
+    margin: auto;
+    top: 2rem;
 }
 
-.data p, .weather p {
+.card img {
+    display: none;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card h2 {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.fun p, .camp p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -88,6 +102,10 @@ button {
     border-radius: .2rem;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
+}
+
+button:hover {
+    text-decoration: underline;
 }
 
 /* large only */
@@ -113,7 +131,7 @@ button {
         width: 100%;
     }
 
-    .data {
+    .fun {
         position: absolute;
         left: 1%;
         top: 16%;
@@ -121,11 +139,18 @@ button {
         max-width: 30%;
     }
 
-    .weather {
+    .camp {
         position: absolute;
         right: 1%;
         bottom: 10%;
         background-color: var(--off-color-translucent);
         max-width: 50%;
     }
+
+    .card img {
+        display: block;
+        width: 400px;
+        margin: auto;
+    }
+    
 }
