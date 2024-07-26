@@ -15,13 +15,13 @@
     <form action="review.html" method="get">
         <h1>Product Review</h1>
         <div class="products">
-            <h3>Product</h3>
+            <h3>Product*</h3>
             <select name="products" id="products" required>
                 <option value="base" disabled selected>Choose A Product . . .</option>
             </select>
         </div>
         <div class="rating">
-            <h4>Stars:</h4>
+            <h4>Stars*</h4>
             <label for="1star">1</label>
             <input type="radio" id="1star" name="user_rating" value="1" required>
             <label for="2star">2</label>
@@ -34,7 +34,7 @@
             <input type="radio" id="5star" name="user_rating" value="5">
         </div>
         <div class="date">
-            <label for="install_date">Installation Date:</label>
+            <label for="install_date">Installation Date*</label>
             <input type="date" id="install_date" name="install_date" required>
         </div>
         <div class="features">
@@ -57,6 +57,7 @@
             <label for="username">User Name:</label>
             <input type="text" id="username" name="username" minlength="1" maxlength="25" size="25" placeholder="(Optional)" />
         </div>
+        <p>("*" indicates a required field.)</p>
         <div class="submit">
             <input type="submit" value="Send My Review">
         </div>

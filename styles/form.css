@@ -43,3 +43,7 @@ footer {
     justify-content: center;
 }
 
+p {
+    font-size: small;
+    padding-top: 1rem;
+}
