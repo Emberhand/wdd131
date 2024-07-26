@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An assignment on HTML forms">
+    <meta name="author" content="Hayden Billings">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="review.html" method="get">
+        <h1>Product Review</h1>
+        <div class="products">
+            <h3>Product</h3>
+            <select name="products" id="products" required>
+                <option value="base" disabled selected>Choose a product . . .</option>
+                
+            </select>
+        </div>
+        <div class="rating">
+            <h4>Stars:</h4>
+            <label for="1star">1</label>
+            <input type="radio" id="1star" name="user_rating" value="1">
+            <label for="2star">2</label>
+            <input type="radio" id="2star" name="user_rating" value="2">
+            <label for="3star">3</label>
+            <input type="radio" id="3star" name="user_rating" value="3">
+            <label for="4star">4</label>
+            <input type="radio" id="4star" name="user_rating" value="4">
+            <label for="5star">5</label>
+            <input type="radio" id="5star" name="user_rating" value="5">
+        </div>
+        <div class="date">
+            <label for="install_date">Installation Date:</label>
+            <input type="date" id="install_date" name="install_date">
+        </div>
+        <div class="features">
+            <h4>Favorite Features</h4>
+            <input type="checkbox" id="compatibility" name="compatibility" value="compatibility">
+            <label for="compatibility">Compatibility</label><br>
+            <input type="checkbox" id="durability" name="durability" value="durability">
+            <label for="durability">Durability</label><br>
+            <input type="checkbox" id="design" name="design" value="design">
+            <label for="design">Design</label><br>
+            <input type="checkbox" id="ease" name="ease" value="ease">
+            <label for="ease">Ease of Use</label><br>
+            <input type="checkbox" id="performance" name="performance" value="performance">
+            <label for="performance">Performance</label><br>
+        </div>
+        <div class="review">
+            <label for="review">Written Review:</label><textarea id="review" name="review" rows="4" cols="50" placeholder="(Optional)" maxlength="200"></textarea>
+        </div>
+        <div class="user">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" minlength="1" maxlength="25" size="25" placeholder="(Optional)" />
+        </div>
+        <div class="submit">
+            <input type="submit" value="Send My Review">
+        </div>
+    </form>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Hayden Billings | Utah</p>
+        <p>Document Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
